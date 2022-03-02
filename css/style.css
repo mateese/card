@@ -40,16 +40,17 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#353535+0,515151+100 */
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2b2b2b+0,515151+100 */
-background: rgb(43,43,43); /* Old browsers */
-background: -moz-linear-gradient(-45deg,  rgba(43,43,43,1) 0%, rgba(81,81,81,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  rgba(43,43,43,1) 0%,rgba(81,81,81,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  rgba(43,43,43,1) 0%,rgba(81,81,81,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#515151',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-background-attachment: fixed;
-	font-family: 'Montserrat', sans-serif;
+	background: rgb(201,201,201); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(201,201,201,1) 0%, rgba(226,226,226,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(201,201,201,1) 0%,rgba(226,226,226,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(201,201,201,1) 0%,rgba(226,226,226,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#e2e2e2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	font-family: 'Teko', sans-serif;
+	background-attachment: fixed;
+	background: url('../img/round.jpg') 100% 100% no-repeat fixed;
+	font-family: ;
 }
+
 
 .container {
 	max-width: 650px;
@@ -62,9 +63,10 @@ background-attachment: fixed;
 }
 .container .card{
 	position: relative;
+	bottom: 50px;
 	width: 280px;
 	height: 400px;
-	margin: 30px;
+	margin: 0px 30px 60px 30px;
 	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
 	border-radius: 15px;
 	background: rgba(255, 255, 255, 0.1);
@@ -88,7 +90,7 @@ background-attachment: fixed;
 }
 .content .back{
 	position: absolute;
-	top: 30px;
+	top: 10px;
 	right: 0px;
 	font-weight: 800;
 	color: rgba(255, 255, 255, 0.2);
@@ -96,14 +98,38 @@ background-attachment: fixed;
 	transform: rotate(-45deg);
 	filter: blur(2px);
 }
-.photo{
+
+.photo img{
+	display: flex;
+	position: absolute;
+	top: 10px;
+	left: 13px;
 	font-size: 30px;
+	width: 250px;
+	height: 250px;
+	border-radius: 10px;
+	border: solid 1px #8F8585;
+}
+img{
+
 }
 
 .text{
-	color: rgba(255, 255, 255, 0.2);
-	font-size: 20px;
+	
+	font-size: 23px;
 }
 .link{
 	display: flex;
+}
+.about{
+	position: absolute;
+	bottom: 30px;
+	left: 70px;
+	color: rgba(255, 255, 255, 0.5);
+}
+.parametres{
+	position: absolute;
+	bottom: 30px;
+	left: 140px;
+	color: rgba(255, 255, 255, 0.5);
 }
